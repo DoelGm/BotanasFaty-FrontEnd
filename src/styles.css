@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* Encabezados con Luckiest Guy */
+h1, h2, h3, h4 {
+  font-family: 'Luckiest Guy', cursive;
+
+}
+
+/* Texto general (párrafos, etiquetas, etc.) con Baloo 2 */
+body, p, span, li, a {
+  font-family: 'Baloo 2', cursive;
+  color: #333;
+}
