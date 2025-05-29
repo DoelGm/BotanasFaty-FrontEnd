@@ -1,1 +1,28 @@
-<p>product-card works!</p>
+<section class="mt-4" data-aos="slide-up">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-3" 
+           data-aos="fade-up" 
+           data-aos-duration="800"
+           data-aos-easing="ease-out-quad"> <!-- Animación más suave -->
+        <div class="card product-card shadow-sm rounded" style="max-width: 250px;">
+          <div class="image-container bg-light" style="height: 200px; overflow: hidden;">
+            <img 
+              [src]="product.imageUrl" 
+              alt="{{ product.name }}" 
+              class="card-img-top w-100 h-100 object-fit-cover p-2"
+            />
+          </div>
+          <div class="card-body text-center p-2">
+            <h6 class="card-title product-name mb-1" style="font-size: 0.9rem;">{{ product.name }}</h6>
+            <p class="card-text product-description mb-2 text-muted small" style="font-size: 0.75rem;">{{ product.description }}</p>
+            <p class="card-text fw-bold product-price mb-2" style="font-size: 0.9rem;">${{ product.price.toFixed(2) }}</p>
+            <button (click)="addToCart()" class="btn btn-sm btn-primary w-100">
+              <i class="fas fa-shopping-cart me-1"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
