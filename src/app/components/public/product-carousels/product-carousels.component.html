@@ -3,7 +3,7 @@
   <owl-carousel-o [options]="customOptions">
     <ng-container *ngFor="let producto of productos">
       <ng-template carouselSlide>
-        <div [routerLink]="['/product', producto.id]" class="card rounded-4 m-2 overflow-hidden" style="max-width: 300px;">
+        <div [routerLink]="['/Producto']" class="card rounded-4 m-2 overflow-hidden" style="max-width: 300px;">
           <img [src]="producto.imagen" class="card-img-top object-fit-cover" [alt]="producto.nombre" style="height: 200px;">
           <div class="card-body text-center">
             <h5 class="card-title fw-semibold text-primary">{{ producto.nombre }}</h5>
@@ -42,7 +42,7 @@
   <owl-carousel-o [options]="customOptions">
     <ng-container *ngFor="let producto of productos">
       <ng-template carouselSlide>
-        <div [routerLink]="['/product', producto.id]" class="card rounded-4 m-2 overflow-hidden" style="max-width: 300px;">
+        <div [routerLink]="['/producto']" class="card rounded-4 m-2 overflow-hidden" style="max-width: 300px;">
           <img [src]="producto.imagen" class="card-img-top object-fit-cover" [alt]="producto.nombre" style="height: 200px;">
           <div class="card-body text-center">
             <h5 class="card-title fw-semibold text-primary">{{ producto.nombre }}</h5>

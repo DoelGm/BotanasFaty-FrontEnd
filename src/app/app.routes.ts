@@ -3,6 +3,7 @@ import { PublicLayoutComponent } from './layouts/public-layout/public-layout.com
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { HomeComponent } from './pages/public/home/home.component';
+import { ProductDetailComponent } from './components/public/product-detail/product-detail.component';
 
 
 export const routes: Routes = [
@@ -11,6 +12,7 @@ export const routes: Routes = [
     component: PublicLayoutComponent,
     children: [
       { path: '', component: HomeComponent },
+      { path: 'Producto', component: ProductDetailComponent },
     ]
   },
   {
